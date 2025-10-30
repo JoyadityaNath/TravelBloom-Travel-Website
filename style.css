@@ -1,90 +1,63 @@
-
-
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background: #eef2f7;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 18px 50px;
-    background: #0b3d91;
-    color: white;
+    background: #0077b6;
+    padding: 15px;
 }
-nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
 }
-nav ul li a {
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-nav ul li a:hover, nav ul li .active {
-    opacity: 0.7;
 }
 
-/* Hero, Glass, Search, Social, Cards, etc. stay identical from previous version */
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
 
-/* Mission Section */
-.mission {
-    padding: 60px;
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff8500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.recommendations {
+    padding: 40px;
     text-align: center;
 }
-.mission p {
-    max-width: 700px;
-    margin: auto;
-}
 
-/* Highlights */
-.highlights {
+.card-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 50px;
 }
-.highlight-card {
-    background: white;
-    padding: 25px;
+
+.card img {
+    width: 200px;
     border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    font-weight: 500;
-    transition: .3s;
-}
-.highlight-card:hover {
-    transform: translateY(-8px);
-}
-
-/* Static Page Layout */
-.static-page {
-    padding: 60px;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Footer */
-footer {
-    background: #0b3d91;
-    text-align: center;
-    color: white;
-    padding: 40px;
-}
-footer form input {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-}
-footer form button {
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: none;
-    background: #ffcc00;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 10px;
 }
