@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelBloom - Explore the World</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <header>
-    <nav class="navbar">
-        <div class="logo">TravelBloom</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">TravelBloom</div>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Hero Section -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Discover Your Next Adventure</h1>
-        <p>Explore breathtaking destinations and dive into diverse cultures around the globe.</p>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Unlock The World’s Hidden Wonders</h1>
+    <p>Where will your curiosity take you next?</p>
 
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search destinations...">
-            <button onclick="performSearch()">Search</button>
-        </div>
-
-        <button class="cta-btn">Book Now</button>
-
-        <div class="social-links">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
-        </div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search destinations...">
+      <button onclick="performSearch()">Search</button>
     </div>
+
+    <button class="cta-btn">Book Now</button>
+  </div>
 </section>
 
-<!-- Recommendations Section -->
-<section class="recommendations" id="results">
+<section class="recommendations">
+  <h2>Featured Destinations</h2>
 
-    <h2>Beach Recommendations</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
-            <h3>Bora Bora</h3>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
-            <h3>Maldives</h3>
-        </div>
+  <div class="grid" id="destinationGrid">
+
+    <!-- Beaches -->
+    <div class="card" data-tags="beach bora water island tropical">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <h3>Bora Bora</h3>
+    </div>
+    <div class="card" data-tags="beach maldives luxury oceans escape">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+      <h3>Maldives</h3>
     </div>
 
-    <h2>Temple Recommendations</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1581091012184-5c1a9ec18018" alt="Temple">
-            <h3>Angkor Wat, Cambodia</h3>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090" alt="Temple">
-            <h3>Senso-ji, Japan</h3>
-        </div>
+    <!-- Temples -->
+    <div class="card" data-tags="temple cambodia angkor heritage ancient">
+      <img src="https://images.unsplash.com/photo-1581091012184-5c1a9ec18018">
+      <h3>Angkor Wat</h3>
+    </div>
+    <div class="card" data-tags="temple japan senso shrine culture">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+      <h3>Senso-ji</h3>
     </div>
 
-    <h2>Country Recommendations</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Italy">
-            <h3>Italy</h3>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1551739440-5e3e60cd938d" alt="Thailand">
-            <h3>Thailand</h3>
-        </div>
+    <!-- Countries -->
+    <div class="card" data-tags="italy europe rome venice">
+      <img src="https://images.unsplash.com/photo-1551739440-5e3e60cd938d">
+      <h3>Italy</h3>
+    </div>
+    <div class="card" data-tags="thailand asia culture tropical">
+      <img src="https://images.unsplash.com/photo-1526481280691-1097cd49093f">
+      <h3>Thailand</h3>
     </div>
 
+  </div>
 </section>
 
 <script src="script.js"></script>
