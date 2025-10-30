@@ -8,39 +8,75 @@
 </head>
 <body>
 
-    <nav>
-        <h2 class="logo">TravelBloom</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+<nav>
+    <h2 class="logo">TravelBloom</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <section class="hero">
-        <div class="glass">
-            <h1>Discover Your Next Adventure</h1>
-            <p>Unlock unforgettable cultural journeys across the globe.</p>
+<section class="hero">
+    <div class="glass">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Embrace meaningful journeys that inspire personal growth and cultural awareness.</p>
 
-            <div class="search-section">
-                <input type="text" id="searchInput" placeholder="Search destinations (e.g., Tokyo)">
-                <div id="results"></div>
-            </div>
-
-            <button class="btn">Book Now</button>
-
-            <div class="social">
-                <a href="#">🌍</a>
-                <a href="#">📸</a>
-                <a href="#">✈️</a>
-            </div>
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search destinations (e.g., Tokyo)">
+            <div id="results"></div>
         </div>
-    </section>
 
-    <section class="results-page" id="resultsPage">
-        <h2>Recommended Destinations</h2>
-        <div id="destList"></div>
-    </section>
+        <button class="btn">Book Now</button>
+
+        <div class="social">
+            <a href="#">🌍</a>
+            <a href="#">📸</a>
+            <a href="#">✈️</a>
+        </div>
+    </div>
+</section>
+
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+        At TravelBloom, we believe travel is more than movement—it's transformation. 
+        We empower explorers to discover culture, connect with global communities, 
+        and create memories that last a lifetime.
+    </p>
+</section>
+
+<section class="highlights">
+    <div class="highlight-card">
+        <h3>Global Destinations</h3>
+        <p>Access curated travel recommendations across continents.</p>
+    </div>
+    <div class="highlight-card">
+        <h3>Authentic Experiences</h3>
+        <p>Step beyond tourism into meaningful cultural immersion.</p>
+    </div>
+    <div class="highlight-card">
+        <h3>Travel Support</h3>
+        <p>We ensure safe, professional, and responsive assistance.</p>
+    </div>
+</section>
+
+<section class="results-page" id="resultsPage">
+    <h2>Recommended Destinations</h2>
+    <div id="destList"></div>
+</section>
+
+<footer id="contact">
+    <h3>Stay Updated With TravelBloom</h3>
+    <p>Enter your email below to receive curated travel inspirations.</p>
+
+    <form id="emailForm">
+        <input type="email" placeholder="Enter Your Email" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p class="copy">© 2025 TravelBloom Global Experiences Inc.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
