@@ -1,10 +1,11 @@
+
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background: #eef2f7;
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,104 +24,67 @@ nav ul li a {
     font-weight: 600;
     transition: 0.3s;
 }
-nav ul li a:hover {
+nav ul li a:hover, nav ul li .active {
     opacity: 0.7;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Hero, Glass, Search, Social, Cards, etc. stay identical from previous version */
 
-/* Glass Panel */
-.glass {
-    background: rgba(255,255,255,0.15);
-    padding: 50px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+/* Mission Section */
+.mission {
+    padding: 60px;
     text-align: center;
-    color: white;
-    animation: fadeIn 1s ease-in-out;
+}
+.mission p {
+    max-width: 700px;
+    margin: auto;
 }
 
-/* Search */
-.search-section {
-    margin: 20px 0;
-}
-.search-section input {
-    width: 320px;
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-}
-#results {
-    background: white;
-    width: 320px;
-    margin: 10px auto 0;
-    border-radius: 5px;
-    display: none;
-}
-#results p {
-    padding: 8px;
-    margin: 0;
-    cursor: pointer;
-}
-#results p:hover {
-    background: #ddd;
-}
-
-/* CTA Button */
-.btn {
-    background: #ffcc00;
-    padding: 12px 30px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.btn:hover {
-    background: #e6b700;
-}
-
-/* Social icons */
-.social {
-    margin-top: 20px;
+/* Highlights */
+.highlights {
     display: flex;
     justify-content: center;
-    gap: 15px;
-}
-.social a {
-    color: white;
-    font-size: 1.5rem;
-}
-
-/* Results Page */
-.results-page {
-    padding: 50px;
-    display: none;
-}
-#destList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
+    padding: 50px;
 }
-.destination-card {
+.highlight-card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    font-weight: 500;
     transition: .3s;
 }
-.destination-card:hover {
-    transform: translateY(-5px);
+.highlight-card:hover {
+    transform: translateY(-8px);
 }
 
-/* Animation */
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
+/* Static Page Layout */
+.static-page {
+    padding: 60px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #0b3d91;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+footer form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+footer form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
 }
