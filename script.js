@@ -35,3 +35,10 @@ function showDestination(name) {
     `).join("");
     window.scrollTo({ top: resultsPage.offsetTop, behavior: "smooth" });
 }
+
+/* Email Form Handler */
+document.getElementById("emailForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! You are now subscribed to TravelBloom updates.");
+    this.reset();
+});
